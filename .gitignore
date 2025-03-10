@@ -1,0 +1,18 @@
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Compiled class files
+*.class
+
+# Maven
+target/
+
+# Logs
+*.log
+
+# IDE-specific files
+.idea/
+*.iml
