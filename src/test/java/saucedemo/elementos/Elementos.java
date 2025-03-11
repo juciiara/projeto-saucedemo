@@ -15,7 +15,7 @@ public class Elementos {
 	public By BikeLight = By.id("add-to-cart-sauce-labs-bike-light");
 	public By Shirt = By.id("add-to-cart-sauce-labs-bolt-t-shirt");
 	public By Jacket = By.id("add-to-cart-sauce-labs-fleece-jacket");
-	public By  Onesie = By.id("add-to-cart-sauce-labs-onesie");
+	public By Onesie = By.id("add-to-cart-sauce-labs-onesie");
 	public By ShirtRed = By.id("add-to-cart-test.allthethings()-t-shirt-(red)");
 	public By clicarCarrinho = By.xpath("//a[@class='shopping_cart_link']");
 	public By verifProdutoCar = By.xpath("//div[@class='cart_list']");
