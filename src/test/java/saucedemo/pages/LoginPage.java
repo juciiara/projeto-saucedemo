@@ -9,7 +9,7 @@ public class LoginPage extends Drivers {
 	Metodos mt = new Metodos();
 	Elementos el = new Elementos();
 
-	public void loginComSucesso(String user, String password) {
+	public  void loginComSucesso(String user, String password) {
 		mt.escrever(el.usernome, user);
 		mt.escrever(el.password, password);
 		mt.clicar(el.btnLogin);

@@ -10,11 +10,11 @@ import saucedemo.drivers.Drivers;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		
+
 		features = "src/test/resources/features", // Caminho dos arquivos .feature
-		tags = "@carrinho ", // Filtra os cenários a serem executados pela tag
+		tags = "@remover ", // Filtra os cenários a serem executados pela tag
 		glue = "saucedemo.steps", // Pacote das definições de passos (Step Definitions)
-		dryRun = false , // Valida se os passos têm implementação sem executar os testes
+		dryRun = false, // Valida se os passos têm implementação sem executar os testes
 		monochrome = true, // Melhora a legibilidade do console
 		plugin = { "pretty", "html:target/cucumber-report.html" }, // Formato de saída e relatório HTML
 		snippets = SnippetType.CAMELCASE // Gera métodos de passos no formato camelCase
@@ -23,15 +23,12 @@ import saucedemo.drivers.Drivers;
 
 public class Executa extends Drivers {
 
-	/**
-	 * Inicializa o teste abrindo o navegador, maximizando a janela 
-	 * e acessando a URL do sistema.
-	 */
-	
+	// Inicializa o teste abrindo o navegador, maximizando a janela
+
 	public static void iniciarTest() {
-	    driver = new ChromeDriver();
-	    driver.manage().window().maximize();
-	    driver.get("https://www.saucedemo.com/");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.saucedemo.com/");
 	}
 
 }
